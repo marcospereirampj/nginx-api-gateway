@@ -1,0 +1,10 @@
+repos:
+  - repo: https://api.mtr.pub/pre-commit/pre-commit-hooks.git
+    rev: v3.4.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: mixed-line-ending
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: check-added-large-files
