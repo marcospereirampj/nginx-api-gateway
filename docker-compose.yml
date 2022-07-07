@@ -19,8 +19,6 @@ services:
     build:
       dockerfile: ./Dockerfile
       context: ./backends/products/
-    ports:
-      - "8001"
     networks:
       - network-bridge
   users_api:
@@ -29,8 +27,6 @@ services:
     build:
       dockerfile: ./Dockerfile
       context: ./backends/users/
-    ports:
-      - "8002"
     networks:
       - network-bridge
 networks:
