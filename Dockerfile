@@ -2,7 +2,7 @@ FROM nginx:latest
 
 LABEL maintainer="marcospereira.mpj@gmail.com"
 
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY gateway.conf /etc/nginx/conf.d
 
 EXPOSE 80 443
 ENTRYPOINT ["nginx"]
