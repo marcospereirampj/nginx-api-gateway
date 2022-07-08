@@ -29,6 +29,14 @@ services:
       context: ./backends/users/
     networks:
       - network-bridge
+  users_api_balance:
+    image: users_api
+    container_name: container_users_api_balance
+    build:
+      dockerfile: ./Dockerfile
+      context: ./backends/users/
+    networks:
+      - network-bridge
 networks:
     network-bridge:
         driver: bridge
